@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void main() {
+int main() {
     int year;
     cin >> year;
     cout << year - 543;
