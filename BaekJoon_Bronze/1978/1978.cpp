@@ -12,16 +12,22 @@ int main() {
         int num = 0;
         int flag = 0;
         cin >> num;
+        
+        if(num == 1) {
+            flag = 1;
+        }
 
-        for(int j =1;j < num/2; j++) {
+        for(int j =1;j <= num/2; j++) {
             
-            if(num > 1 && num%j ==0 && j != 1 ) {
+            if(num%j ==0 && j != 1 ) {
+                
                 flag = 1;
                 break;
             }
         }
 
         if(flag == 0) {
+            
             count++;
         }
     }
