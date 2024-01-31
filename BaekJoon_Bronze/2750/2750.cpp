@@ -15,7 +15,7 @@ int main() {
         cin >> num[i];
     }
 
-    sort(num[0], num[0] + N);
+    sort(num, num + N);
 
     for(int i = 0; i < N; i++) {
         cout << num[i] << endl;
