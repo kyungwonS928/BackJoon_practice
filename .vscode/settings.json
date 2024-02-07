@@ -7,6 +7,7 @@
         "vector": "cpp",
         "deque": "cpp",
         "algorithm": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "xlocale": "cpp"
     }
 }
