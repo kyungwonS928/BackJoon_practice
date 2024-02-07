@@ -6,6 +6,7 @@
         "string": "cpp",
         "vector": "cpp",
         "deque": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "utility": "cpp"
     }
 }
