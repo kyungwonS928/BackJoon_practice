@@ -4,6 +4,17 @@
 #include<algorithm>
 using namespace std;
 
+bool compare(pair<string, string> i, pair<string, string> j) {
+    int length;
+    if(i.first.length() > j.first.length()) length = j.first.length();
+    else length = i.first.length();
+    for(int n = 0; n<length; n++) {
+        if(i.first[n] == j.first[n]) continue;
+        else return i.first[n] > j.first[n];
+    }
+
+    return i.second[0] < j.second[0];
+}
 
 int main() {
     ios::sync_with_stdio(false);
@@ -13,15 +24,16 @@ int main() {
     vector<pair<int, string>> members;
     int N, M;
     cin >> N >> M;
-    vector<string> cards;
+    vector<pair<string, string>> cards;
 
     for(int i = 0; i<N; i++) {
         string n;
-        cin >> n;
-        cards.push_back(n);
+        string e;
+        cin >> n >> e;
+        cards.push_back({n, e});
     }
     
-    sort(cards.begin(), cards.begin()+N);
+    stable_sort(cards.begin(), cards.begin()+N, compare);
 
     int cnt;
     for(int i = 0; i<M; i++) {
