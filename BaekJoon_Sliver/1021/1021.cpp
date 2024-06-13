@@ -20,11 +20,11 @@ int main()
 	int num;
 	int cnt = 0;
 	int temp = 0;
+	auto index = 0;
 	while (m--)
 	{
 		cin >> num;
-		auto index = find(deq.begin(), deq.end(), num) - deq.begin();
-		cout << index;
+		index = find(deq.begin(), deq.end(), num) - deq.begin();
 
 		while (true)
 		{
@@ -36,19 +36,23 @@ int main()
 			else
 			{
 
-				if (index < deq.size() / 2)
+				if (index <= deq.size() / 2)
 				{
 					temp = deq.front();
 					deq.pop_front();
 					deq.push_back(temp);
+					cnt++;
 				}
 				else
 				{
 					temp = deq.back();
 					deq.pop_back();
 					deq.push_front(temp);
+					cnt++;
 				}
 			}
 		}
 	}
+
+	cout << cnt;
 }
