@@ -18,6 +18,11 @@
     "forward_list": "cpp",
     "list": "cpp",
     "regex": "cpp",
-    "*.tcc": "cpp"
+    "*.tcc": "cpp",
+    "memory": "cpp",
+    "functional": "cpp",
+    "future": "cpp",
+    "istream": "cpp",
+    "tuple": "cpp"
   }
 }
