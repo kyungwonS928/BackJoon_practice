@@ -23,6 +23,7 @@
     "functional": "cpp",
     "future": "cpp",
     "istream": "cpp",
-    "tuple": "cpp"
+    "tuple": "cpp",
+    "cmath": "cpp"
   }
 }
